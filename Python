@@ -15,3 +15,19 @@ for division in range(2000, 3200):
     if (division %7 == 0) & (division %5 != 0):
         comma.append(str(division))
 print(comma)
+
+
+-----------Ass 2
+
+
+#Displaying * pattern
+list_number = [1,2,3,4,5,4,3,2,1]
+for numbers in list_number:
+    display = ''
+    for num in range(numbers):
+        display += '*'
+    print(display)
+    
+# Reversing a word after user input
+user_input = input('Enter the Topic : ')
+print(user_input[:: -1])
