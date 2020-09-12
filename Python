@@ -1,0 +1,15 @@
+#Volume of the sphere 
+diameter = 12
+print( "Volume of Sphere : ",(4/3) * 3.14 * diameter**2)
+
+#User first name and last name are avilable for input and results are displaed with reverse string
+first_name = input('Enter your First Name : ')[::-1]
+last_name = input('Enter your Last Name : ')[::-1]
+print(first_name, last_name)
+
+#Divisible by 7 but not multiples of 5 printed with comma, not in a line
+comma = []
+for division in range(2000, 3200):
+    if (division %7 == 0) & (division %5 != 0):
+        comma.append(str(division))
+print(comma)
