@@ -31,3 +31,22 @@ for numbers in list_number:
 # Reversing a word after user input
 user_input = input('Enter the Topic : ')
 print(user_input[:: -1])
+
+
+-------Ass 3
+# Reduce clone
+def myreduce(funct, intialvalue):
+    result = intialvalue[0]
+    for value in intialvalue[1:]:
+        result = funct(result, value)
+
+    return result
+
+# Filter clone
+def myfilter(func, initvalue):
+    result = []
+ # iterate over sequence of items in sequence and apply filter function
+    for value in initvalue:
+        if func(value):
+            result.append(value)
+        return result
